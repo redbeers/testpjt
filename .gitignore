@@ -1,45 +1,82 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# ======================
+# Flutter / Dart (캐시, 빌드)
+# ======================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
 
-# IntelliJ related
+# Flutter 로컬 메타데이터 (절대 커밋 X)
+.metadata
+
+# ======================
+# IntelliJ IDEA
+# ======================
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
+out/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# ======================
+# Android (로컬/빌드)
+# ======================
+android/.gradle/
+android/local.properties
+android/key.properties
+android/**/GeneratedPluginRegistrant.java
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
+# APK / AAB
+*.apk
+*.aab
 
-# Symbolication related
-app.*.symbols
+# ======================
+# iOS / macOS (빌드/의존성)
+# ======================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+DerivedData/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Runner/GeneratedPluginRegistrant.*
 
-# Obfuscation related
-app.*.map.json
+macos/Pods/
+macos/.symlinks/
+macos/Flutter/ephemeral/
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad
+
+# ======================
+# Web
+# ======================
+web/.dart_tool/
+web/build/
+
+# ======================
+# Windows / Linux
+# ======================
+windows/flutter/ephemeral/
+windows/.vs/
+linux/flutter/ephemeral/
+
+# ======================
+# Logs / OS files
+# ======================
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# ======================
+# Tests (실무에서 안 쓰면)
+# ======================
+test/
